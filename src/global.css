@@ -2,14 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #1B1464;
+    font-size: bold;
     font-family: sans-serif;
 }
 
 .container {
-    max-width: 960px;
+    max-width: 480px;
     width: 100%;
     margin: 0 auto;
-}
-.top{
-    margin-top: 80px;
+    padding: 80px;
+    background-color: #1289A7;
 }

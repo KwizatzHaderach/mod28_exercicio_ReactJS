@@ -1,5 +1,5 @@
-
 import React, { useState } from 'react';
+import style from './Formulario.module.css'
 
 const Formulario = ({ onFormSubmit }) => {
     const [altura, setAltura] = useState('');
@@ -11,21 +11,24 @@ const Formulario = ({ onFormSubmit }) => {
     };
 
     return (
-        <header> 
-            <div className='container'>
+        <body class="body" > 
+            <div class='container'>
                 <form onSubmit={handleSubmit}>
-                    <div>
+                    <div className={style.div}> 
+                        <h1 className="">Calculadora de IMC</h1>
+                    </div>
+                    <div className={style.div}>
                         <label htmlFor="altura">Altura (cm):</label>
                         <input type="number" id="altura"value={altura}onChange={(e) => setAltura(e.target.value)} placeholder='ex: 1,75'/>
                     </div>
-                    <div>
+                    <div className={style.div}>
                         <label htmlFor="peso">Peso (kg):</label>
                         <input type="number" id="peso" value={peso} onChange={(e) => setPeso(e.target.value)} placeholder='ex: 80'/>
                     </div>
-                    <button type="submit">Calcular IMC</button>
+                    <button className={style.button} type="submit">Calcular IMC</button>
                 </form>
             </div>
-        </header>
+        </body>
         
     );
 };

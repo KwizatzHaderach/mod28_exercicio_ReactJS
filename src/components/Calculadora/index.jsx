@@ -18,6 +18,8 @@ const Calculadora = ({ altura, peso }) => {
     const classificacao = resultadoClassificacao(imc);
 
     return (
+        
+
         <div className='container'>
             <h2>Resultado</h2>
             <p>IMC: {imc}</p>
