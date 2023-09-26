@@ -16,11 +16,11 @@ const Formulario = ({ onFormSubmit }) => {
                 <form onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="altura">Altura (cm):</label>
-                        <input type="number" id="altura"value={altura}onChange={(e) => setAltura(e.target.value)}/>
+                        <input type="number" id="altura"value={altura}onChange={(e) => setAltura(e.target.value)} placeholder='ex: 1,75'/>
                     </div>
                     <div>
                         <label htmlFor="peso">Peso (kg):</label>
-                        <input type="number" id="peso" value={peso} onChange={(e) => setPeso(e.target.value)}/>
+                        <input type="number" id="peso" value={peso} onChange={(e) => setPeso(e.target.value)} placeholder='ex: 80'/>
                     </div>
                     <button type="submit">Calcular IMC</button>
                 </form>
