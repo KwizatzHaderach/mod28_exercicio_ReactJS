@@ -3,7 +3,7 @@ import React from 'react';
 
 const Calculadora = ({ altura, peso }) => {
     const calcularIMC = () => {
-        const alturaM = altura / 100;
+        const alturaM = altura;
         return (peso / (alturaM * alturaM)).toFixed(2);
     };
 
