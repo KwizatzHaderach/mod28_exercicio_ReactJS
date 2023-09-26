@@ -3,8 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     color: #1B1464;
-    font-size: bold;
     font-family: sans-serif;
+    font-weight: bold;
 }
 
 .container {
